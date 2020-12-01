@@ -1,5 +1,10 @@
 # django_template
+A basic template for you to get started using Django in your projects.
+Follow guides here: 
 
+- [How to set up VS code Studio](https://youtu.be/v5eRARe5PVE)
+- [How to download github repo to VS Code Studio](https://youtu.be/30OY8aeaFaQ)
+- [What are branches and merging + how to create them](https://www.youtube.com/watch?v=S7TbHDN8EXA)
 
 ## Virtual Environment settings
 

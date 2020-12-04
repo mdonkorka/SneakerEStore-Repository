@@ -5,3 +5,9 @@ def index(request):
     
     context = {}
     return render(request, 'store/index.html', context)
+
+# Create your views here.
+def aboutPage(request):
+    
+    context = {}
+    return render(request, 'store/about.html', context)

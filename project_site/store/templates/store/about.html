@@ -1,7 +1,108 @@
 {% extends 'store/main.html' %}
 {% load static %}
 {% block content %}
-    
-    <h3>About</h3>
+
+<html>
+
+<style>
+    .fs1{
+	font-size: 30px;
+}
+
+    .fs2{
+	font-size: 25px;
+}
+</style>
+
+    <div>
+
+        <br><br><br><br>
+
+        <!-- About Us -->
+        <div class="text-center fs1 mx-5 " id="aboutus">
+            <h1> About Us </h1>
+            <br>
+            <p>KDcreps is know for sourcing and selling the most rare and wanted sneakers on the market for the best prices.</p>
+            <p>Our Team is made up of various experienced resellers who take pride in being active in the sneaker community and industry for a substaintial amount of time.</p>        
+            <p>We aim to provide proivde both excellent customer experience and exceptional service for our clients and customers.</p>           
+            <p>We do no sell or promote fakes, counterfeit or replica products. All the products we sell are 100% authentic.</p>           
+            
+            <p>Please refer to our <a href="#">"Terms and Conditions "</a>
+               and <a href="#">"Shipping and Returns"<a> sections for more information.
+            </p>                    
+            
+            <p>To contact us for any general information or urgent enquiries please 
+            check out our<a href="#">"Contact Us"</a>section.</p>           
+        </div>
+        ]<!-- /About us -->
+        
+        <br><br>       
+        
+        <!-- Shipping and Returns -->
+        <div class="text-center fs1 mx-5 bg-black txt-white" id="sandr" >
+        <br>
+            <h1 class="text-danger"> Shipping and Returns </h1>
+            <br>
+            <p>Packages will be sent Tracked via Royal Mail. This means all orders must be signed for when they arrive for clarification that the item has been delivered; this will protect you incase your order gets lost.</p>
+            <p>We Ship to the UK as well as internationally (depending on whether royal mail ships to your chosen country). </p>        
+            <p>Prices will be based on your chosen shipping location at checkout, the items you're ordering and the service you choose. For example First Class or Second Class.</p>         
+            <br>  
+        </div>
+        <!-- /Shipping and Returns -->
+
+        <br>
+
+        <!-- Contact us -->
+        <div class="text-center fs1 mx-5" id="contactus">
+            <h1> Contact Us </h1>
+            <br>
+            <p>To Contact Us please fill in this quick
+                <button type="button" class="btn btn-success fs2" data-bs-toggle="modal" data-bs-target="contactusmodal">
+                    Contact Us Form 
+                </button>
+                in the pop up window.
+                Alternatively you can email us at kdcreps@gmail.com or text us at 07123456789.
+            </p>
+
+            <!-- Modal -->
+            <div class="modal fade" id="contactusmodal" tabindex="-1" aria-labelledby="contactusmodal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="contactusmodal">Contact Us Form</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-success">Send</button>
+                </div>
+                </div>
+            </div>
+            </div>
+            <!-- /Modal -->
+
+        <!-- /Contact Us -->
+
+        <!-- Terms and Conditions -->
+        </div>
+
+        <br>
+
+        <div class="text-center fs1 mx-5 bg-secondary">
+            <h1 class"text-danger"> Terms and Conditions </h1>
+            <br>
+            <p>COMING SOON...</p>
+            <br>
+        </div>
+        <!-- /Terms and Conditions -->
+
+    </div>
+
+<br><br><br>
+
+</html>
 
 {% endblock content %}

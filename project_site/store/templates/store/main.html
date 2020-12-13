@@ -22,7 +22,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-md navbar-light bg-black fixed-top">
     
-    <div class="my-2 mr-4" >
+    <div class="mr-4" >
         <a href="{% url 'homepage' %}">
 	        <img class=bg-black id="kdcreps-logo" src="{% static 'images/kdcreps_logo.png' %}" width="75" height="75" alt="Cart Icon">
 	    </a>
@@ -46,9 +46,10 @@
                          About Us
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item text-primary" href="#">Contact Us</a>
+                        <a class="dropdown-item text-primary" href="{% url 'about' %}">About Us</a>
+                        <a class="dropdown-item text-primary" href="aboutus">Contact Us</a>
                         <a class="dropdown-item text-primary" href="#">Terms & Conditions</a>
-                        <a class="dropdown-item text-primary" href="#">Shipping & Returns</a>
+                        <a class="dropdown-item text-primary" href="#sandr">Shipping & Returns</a>
                     </div>
                 </li>
                 <li>
@@ -60,8 +61,8 @@
             <a href="{% url 'cart' %}">
                     <img  id="cart-icon" src="{% static 'images/shopping-bags.png' %}" width="75" height="75" alt="Icons made by <a href='https://www.flaticon.com/authors/monkik' title='monkik'>monkik</a> from <a href='https://www.flaticon.com/ title='Flaticon'>www.flaticon.com</a></div>
 <div>Icons made by <a href=''https://www.flaticon.com/authors/monkik' title='monkik'>monkik</a> from <a href='https://www.flaticon.com/' title='Flaticon'>www.flaticon.com</a></div>''">
-                </a>
-                        <p id="cart-total">0</p>
+            </a>
+            <p id="cart-total">0</p>
         </div>
 
         </div>

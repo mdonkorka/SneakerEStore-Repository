@@ -3,10 +3,53 @@
 {% block content %}
     
 <html>
-<body>
+
+<style>
+.box-1 {
+  width: 1500px;
+  border: 5px solid black;
+  padding: 50px;
+  margin: 20px;
+  background-color: white;
+}
+</style>
+
+<body class="bg-black">
+
+        <div>
+            <img class='img-fluid w-100' src="{% static 'images/offwhite shoe jumbotron background (cropped1).jpg' %}" alt="offwhite background" />
+        </div> 
+
+        <div class="row bg-black">
+            <div class="col-sm bg-black justify-content-center text-center my-auto txt-white">
+                <h2 class="text-center"><span class="align-middle">"Item you're looking for is Deadstock or Unavailable?"</span></h2>
+                <a href="#">
+                    <button type="button" class="btn btn-outline-secondary my-3">Contact us for for any sold out sneakers and apparel</button>
+                </a>
+            </div>
+            <div class="col-sm">
+                <img class='img-fill w-100' src="{% static 'images/yeezy background.jpg' %}" alt="elevating sneakers background">
+            </div>
+        </div>
+
+        <div class="row bg-light mb-3">
+        <div class="box-1 text-center mx-auto">
+            <h2 class="text-primary" >For more info:</h2>
+            <a href="{% url 'about' %}">
+                <button type="button" class="btn btn-dark">About Us</button>
+            </a>
+        </div>
+        </div>
+        </div>
+   
+
+
+
+
 
 
 </body>
+
 
 </html>
 

@@ -8,45 +8,21 @@
 
 	<h1 class="text-center mt-5"> STORE </h1>
 
-    <div class="row mx-5">
-		<div class="col-lg-4 mb-3">
-			<img class="thumbnail" src="{% static 'images/pf-jordan1bluetoe.jpg' %}">
-			<div class="box-element-c product">
-				<h6><strong>Air Jordan 1 Royal Blue Toes</strong></h6>
-				<hr>
+	    <div class="row mx-5">
+			{% for product in products %}
+			<div class="col-lg-4 mb-3">
+				<img class="thumbnail" src="{{product.imageURL}}">
+				<div class="box-element-c product">
+					<h6><strong>{{product.name}}</strong></h6>
+					<hr>
 
-				<button  class="btn btn-outline-secondary add-btn">Add to Cart</button>
-				<a class="btn btn-outline-success" href="#">View</a>
-				<h4 style="display: inline-block; float: right"><strong>£150</strong></h4>
+					<button  class="btn btn-outline-secondary add-btn">Add to Cart</button>
+					<a class="btn btn-outline-success" href="#">View</a>
+					<h4 style="display: inline-block; float: right"><strong>£{{product.price|floatformat:2}}</strong></h4>
+				</div>
 			</div>
+			{% endfor %}
 		</div>
-
-		<div class="col-lg-4 mb-3">
-			<img class="thumbnail" src="{% static 'images/pf-af1oskeleton.jpg' %}">
-			<div class="box-element-c product">
-				<h6><strong>Air Force 1 Orange Skeletons</strong></h6>
-				<hr>
-				
-				<button  class="btn btn-outline-secondary add-btn">Add to Cart</button>
-				<a class="btn btn-outline-success" href="#">View</a>
-				<h4 style="display: inline-block; float: right"><strong>£150</strong></h4>
-				
-			</div>
-		</div>
-
-		<div class="col-lg-4 mb-3">
-			<img class="thumbnail" src="{% static 'images/pf-dunkchicago.jpg' %}">
-			<div class="box-element-c product">
-				<h6><strong>Nike Dunk Low SB Chicago</strong></h6>
-				<hr>
-
-				<button  class="btn btn-outline-secondary add-btn">Add to Cart</button>
-				<a class="btn btn-outline-success" href="#">View</a>
-				<h4 style="display: inline-block; float: right"><strong>£150</strong></h4>
-
-			</div>
-		</div>
-	</div>
 
 	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 

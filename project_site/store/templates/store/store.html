@@ -6,7 +6,7 @@
 
 <body class="bg-light">
 
-	<h1 class="text-center mt-5"> STORE </h1>
+	<h1 class="text-center my-3"> STORE </h1>
 
 	    <div class="row mx-5">
 			{% for product in products %}
@@ -17,7 +17,6 @@
 					<hr>
 
 					<button data-product="{{product.id}}" data-action="add"  class="btn btn-outline-secondary add-btn update-cart">Add to Cart</button>
-					<a class="btn btn-outline-success" href="#">View</a>
 					<h4 style="display: inline-block; float: right"><strong>£{{product.price|floatformat:2}}</strong></h4>
 				</div>
 			</div>

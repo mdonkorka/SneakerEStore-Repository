@@ -91,29 +91,22 @@
                         Store
                     </a>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle text-primary" href=# id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                         About Us
+                 <li class="nav-item">
+                    <a class="nav-link text-primary" href="{% url 'about' %}">
+                        About
                     </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item text-primary" href="{% url 'about' %}">About Us</a>
-                        <a class="dropdown-item text-primary" href="aboutus">Contact Us</a>
-                        <a class="dropdown-item text-primary" href="#">Terms & Conditions</a>
-                        <a class="dropdown-item text-primary" href="#sandr">Shipping & Returns</a>
-                    </div>
                 </li>
-                <li>
+                <li class="mx-3">
                     <h1 class="text-centre text-primary" >KDCREPS </h1>
                 </li>
              </ul>  
       
         <div>
-            <a href="#"class="btn btn-warning">Login</a>
             <a href="{% url 'cart' %}">
                     <img  id="cart-icon" src="{% static 'images/shopping-bags.png' %}" width="75" height="75" alt="Icons made by <a href='https://www.flaticon.com/authors/monkik' title='monkik'>monkik</a> from <a href='https://www.flaticon.com/ title='Flaticon'>www.flaticon.com</a></div>
 <div>Icons made by <a href=''https://www.flaticon.com/authors/monkik' title='monkik'>monkik</a> from <a href='https://www.flaticon.com/' title='Flaticon'>www.flaticon.com</a></div>''">
             </a>
-            <p class="ml-5" id="cart-total">{{cartItems}}</p>
+            <p class="mt-1" id="cart-total">{{cartItems}}</p>
         </div>
 
         </div>
@@ -162,13 +155,13 @@
                     <a class="txt-white" href="{% url 'about' %}">
                     <p class="font-Verdana">About Us</p>
                     </a>
-                    <a class="txt-white" href="#">
+                    <a class="txt-white" href="{% url 'about' %}#sandr">
                     <p>Shippings&Returns</p>
                     </a>
-                    <a class="txt-white" href="#">
+                    <a class="txt-white" href="{% url 'about' %}#tandc">
                     <p>Terms&Conditions</p>
                     </a>
-                    <a class="txt-white" href="#">
+                    <a class="txt-white" href="{% url 'about' %}#contactus">
                     <p>Contact Us</p>
                     </a>
                 </div>  
